@@ -154,7 +154,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 110px;
+  height: 150px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -169,7 +169,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 70px;
+  height: 120px;
   padding: 15px 0;
   background-color: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -214,8 +214,11 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+  background: #f5f8fd url("../img/poultry.jpg") center top no-repeat;
   background-size: cover;
+  /* filter: contrast(10%); */
+  background-color: gray;
+  background-blend-mode: screen;
 }
 
 #intro .intro-info h2 {
@@ -223,6 +226,7 @@ h6 {
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
+  margin-top: 20%;
 }
 
 #intro .intro-info h2 span {
@@ -232,7 +236,7 @@ h6 {
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -241,7 +245,7 @@ h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1bb1dc;
+  background: #026581;
   color: #fff;
 }
 
@@ -543,7 +547,7 @@ h6 {
 #about .about-img img {
   width: 100%;
   border: 8px solid #fff;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #about .about-img img:hover {
@@ -559,9 +563,9 @@ h6 {
   width: 90%;
   height: 92%;
   z-index: -1;
-  content: '';
+  content: "";
   background-color: #ebf1fa;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #about .about-img::after {
@@ -571,9 +575,9 @@ h6 {
   width: 90%;
   height: 92%;
   z-index: -1;
-  content: '';
+  content: "";
   background-color: #ebf1fa;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /* Services Section
@@ -867,8 +871,18 @@ h6 {
   background: #42c3e8;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+#portfolio
+  .portfolio-item
+  .portfolio-wrap
+  .portfolio-info
+  .link-preview:hover
+  i,
+#portfolio
+  .portfolio-item
+  .portfolio-wrap
+  .portfolio-info
+  .link-details:hover
+  i {
   color: #fff;
 }
 
@@ -949,6 +963,7 @@ h6 {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
+  height: 350px;
 }
 
 #team .member .member-info {
@@ -1067,13 +1082,13 @@ h6 {
   border: 0;
   border-radius: 0px;
   box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 36px 0;
   position: relative;
 }
 
 #pricing .card:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1521,7 +1536,7 @@ h6 {
 @media (max-width: 767px) {
   #intro {
     height: auto;
-    padding: 80px 0 60px 0;
+    padding: 150px 0 60px 0;
   }
 
   #intro .container {
